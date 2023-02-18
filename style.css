@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: inherit;
+  text-decoration: none;
+}
+.wrapper {
+  padding-bottom: 60px;
+  background-color: rgb(10, 3, 36);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-form {
+  box-shadow: rgba(197, 192, 177, 0.315) 0px 12px 62px,
+    rgba(0, 0, 0, 0.07) 0px 5px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  position: relative;
+  width: 600px;
+  color: rgb(234, 236, 236);
+  height: 650px;
+  background-color: rgba(21, 26, 31, 0.336);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.card-container {
+  padding: 26px 30px;
+  /* background-image: linear-gradient(
+    to left,
+    #6c4199fd,
+    #755ba8,
+    #8270be,
+    #958ed0,
+    #ababe1
+  ); */
+  width: 400px;
+  height: 280px;
+  position: absolute;
+  top: -80px;
+  border-radius: 14px;
+  display: flex;
+  backface-visibility: hidden;
+}
+.card-container .front {
+  padding: 26px 30px;
+  width: 400px;
+  height: 280px;
+  top: 0;
+  position: absolute;
+  border-radius: 14px;
+  display: flex;
+  backface-visibility: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to left,
+    #6c4199fd,
+    #755ba8,
+    #8270be,
+    #958ed0,
+    #ababe1
+  );
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+.card-container img {
+  height: 45px;
+}
+
+.card-container .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: inherit;
+  position: absolute;
+  top: 0;
+  padding: 20px 0;
+  border-radius: inherit;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 26px 30px;
+  background-image: linear-gradient(
+    to left,
+    #6c4199fd,
+    #755ba8,
+    #8270be,
+    #958ed0,
+    #ababe1
+  );
+  backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+.back img {
+  padding: 12px 20px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+}
+.stripe {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  margin: 10px 0;
+}
+.cvv-box {
+  color: #000000;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.logo {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.card-inf {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-list {
+  width: 90%;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.card-list > div {
+  margin: 0.6rem 0;
+}
+input {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0.2rem;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+.exp {
+  width: 90px;
+}
+input:focus {
+  border-bottom: 3px solid rgb(78, 91, 209);
+  border-right: 2px solid rgb(78, 91, 209);
+}
+.select-group {
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+}
+.submit {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to left,
+    #6c4199fd,
+    #755ba8,
+    #8270be,
+    #958ed0,
+    #ababe1
+  );
+  width: 100%;
+  height: 40px;
+  color: #23136d;
+  border-radius: 4px;
+}
+.submit:hover {
+  background-color: rgb(122, 151, 231);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(234, 237, 252);
+}
+#exMounth,
+#exYear {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 140px;
+}
